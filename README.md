@@ -69,7 +69,9 @@ Great! API has been created.
 #### 3. Deploy the API
 
 🔸 In the Actions drop-down list, select Deploy API.
+
 🔸 Select [New Stage] in the Deployment stage drop-down list.
+
 🔸 You can fill in the other parts as you wish.
 
 <img width="479" alt="Ekran Resmi 2022-06-25 18 24 45" src="https://user-images.githubusercontent.com/91700155/175812394-675d520f-0a04-4fdc-b03f-c1ba78ee5755.png">
