@@ -2,7 +2,7 @@
 
 ### In our previous lesson, we made a simple example on Lambda via EFS.
 To continue from the previous article:
-🔙 https://github.com/sedaatalay/Deploying-large-python-packages-on-AWS-Lambda-using-EFS
+https://github.com/sedaatalay/Deploying-large-python-packages-on-AWS-Lambda-using-EFS 🔙 
 
 ### Now let's see how we can use it with API Gateway by adding more different libraries.
 
@@ -58,9 +58,11 @@ def lambda_handler(event, context):
 
 #### 2. Create API Gateway
 Search and select API Gateway. Go to the REST API card and click build.
+
 <img width="898" alt="Ekran Resmi 2022-06-25 18 22 44" src="https://user-images.githubusercontent.com/91700155/175811850-ab66910e-2760-4e79-bae5-d48512da2e8d.png">
 
 Provide all the required information as shown in the image below and click Create API.
+
 <img width="714" alt="Ekran Resmi 2022-06-25 18 23 25" src="https://user-images.githubusercontent.com/91700155/175812216-48066900-49ad-48ce-9bdb-c7d9b1a66b85.png">
 
 In the steps above we created an API. But an API usually has endpoint(s). An endpoint usually specifies a path and the HTTP method it supports. For example GET /get-user. Here, we call the path resource, and the HTTP verb tied to a path a method. Thus, resource + method = REST endpoint.
@@ -69,6 +71,7 @@ From the "Action" dropdown select "Create Method". Choose "Get Function". Provid
 <img width="728" alt="Ekran Resmi 2022-06-25 18 23 54" src="https://user-images.githubusercontent.com/91700155/175812256-3a2f8bd4-b040-4216-aea6-d46524db193a.png">
 
 Great! API has been created.
+
 <img width="1254" alt="Ekran Resmi 2022-06-25 18 24 25" src="https://user-images.githubusercontent.com/91700155/175812342-c35b1f26-921a-4f22-be71-39d59599abb8.png">
 
 #### 3. Deploy the API
