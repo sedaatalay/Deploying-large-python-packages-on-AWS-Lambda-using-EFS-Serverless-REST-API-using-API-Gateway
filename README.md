@@ -116,7 +116,7 @@ That's it. Your response is here!
 
 <p> </br>
 <p>
-Thank for timing :)
+Thanks for timing :)
 
 
 
