@@ -66,6 +66,7 @@ Provide all the required information as shown in the image below and click Creat
 <img width="714" alt="Ekran Resmi 2022-06-25 18 23 25" src="https://user-images.githubusercontent.com/91700155/175812216-48066900-49ad-48ce-9bdb-c7d9b1a66b85.png">
 
 In the steps above we created an API. But an API usually has endpoint(s). An endpoint usually specifies a path and the HTTP method it supports. For example GET /get-user. Here, we call the path resource, and the HTTP verb tied to a path a method. Thus, resource + method = REST endpoint.
+
 From the "Action" dropdown select "Create Method". Choose "Get Function". Provide all the other info shown in the image below and click save. Lambda function is the name of the function we create in one of the previous chapter.
 
 <img width="728" alt="Ekran Resmi 2022-06-25 18 23 54" src="https://user-images.githubusercontent.com/91700155/175812256-3a2f8bd4-b040-4216-aea6-d46524db193a.png">
@@ -91,6 +92,7 @@ Append the path to your endpoint to the end of the invoke URL like: https://wrl3
 
 #### 4. API Gateway test example
 Run the request through VS Code to get the result of our sample code that we have uploaded to Lambda.
+
 Let's take the Invoke URL in the API Gateway stage section that was just created and write it in the base section here.
 
 ```console
