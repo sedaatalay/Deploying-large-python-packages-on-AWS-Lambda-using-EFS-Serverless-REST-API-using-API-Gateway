@@ -17,12 +17,12 @@ https://github.com/sedaatalay/Deploying-large-python-packages-on-AWS-Lambda-usin
 ![6250d33edf71977f11b17888_Untitled](https://user-images.githubusercontent.com/91700155/175812025-77d8204f-8325-4f5e-9cbc-4b619a828ddb.png)
 
 #### 1. Lambda Function with example libraries from EFS
-- Install the Python libraries in my access folder. We can use these libraries in the example we will do with the help of API Gateway.
+🔸 Install the Python libraries in my access folder. We can use these libraries in the example we will do with the help of API Gateway.
 ```console      
 pip3 install --upgrade --target mnt/access/ pandas
 pip3 install --upgrade --target mnt/access/ scikit-learn==1.0.2
 ```
-- Let’s go back to the Lambda. Deploy the example code.
+🔸 Let’s go back to the Lambda. Deploy the example code.
 ```console
 #normal imports
 import json
@@ -77,13 +77,13 @@ Great! API has been created.
 
 #### 3. Deploy the API
 
-- In the Actions drop-down list, select Deploy API.
-- Select [New Stage] in the Deployment stage drop-down list.
-- You can fill in the other parts as you wish.
+🔸 In the Actions drop-down list, select Deploy API.
+🔸 Select [New Stage] in the Deployment stage drop-down list.
+🔸 You can fill in the other parts as you wish.
 
 <img width="479" alt="Ekran Resmi 2022-06-25 18 24 45" src="https://user-images.githubusercontent.com/91700155/175812394-675d520f-0a04-4fdc-b03f-c1ba78ee5755.png">
 
-- Stages has been ready.
+🔸 Stages has been ready.
 Note the invoke URL is your API's base URL.
 Append the path to your endpoint to the end of the invoke URL like: https://wrl34unbe0.execute-api.eu-central-1.amazonaws.com/{stage name}/paraphrase. And of course the request method should be GET.
 
