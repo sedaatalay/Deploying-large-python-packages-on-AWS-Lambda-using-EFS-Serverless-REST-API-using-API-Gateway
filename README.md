@@ -39,22 +39,13 @@ def lambda_handler(event, context):
     loaded_model = pickle.load(open("finalized_model.pkl","rb"))
     print('Done1')
     pred = loaded_model.predict([event['X']])
-        
-       #[[0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-       #0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-       #0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-       #0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 1., 0.,
-       #0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-       #0., 0., 0., 0., 1., 1., 1., 1., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-       #0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
-       #0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.]])
-       
+    
     return {
         'statusCode': 200,
         'pred':pred[0]
     }
 ``` 
-<img width="567" alt="Ekran Resmi 2022-06-25 18 27 40" src="https://user-images.githubusercontent.com/91700155/175812520-885d449a-7fdb-4917-8758-c31ab8166500.png">
+<img width="484" alt="Ekran Resmi 2022-06-26 15 49 30" src="https://user-images.githubusercontent.com/91700155/175815006-37b675c0-a2be-4922-8030-e8f35ddbb13c.png">
 
 #### 2. Create API Gateway
 Search and select API Gateway. Go to the REST API card and click build.
